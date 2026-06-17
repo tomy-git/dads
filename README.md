@@ -31,6 +31,29 @@ Use $dads to build an accessible public-sector web UI with the Digital Agency De
 $dads を使って、自治体向け申請フォームのUIをDADSに沿って設計してください。
 ```
 
+## 配布zipの使い方
+
+`dist/` には、配布先ごとに内容を分けたzipファイルを置きます。
+
+- `dist/dads-codex.zip`: Codex向け。`SKILL.md`、`LICENSE`、`references/`、`agents/openai.yaml` を含みます。
+- `dist/dads-claude-code.zip`: Claude Code向け。`SKILL.md`、`LICENSE`、`references/` を含みます。
+
+どちらのzipも、展開すると `dads/` フォルダが作られる構成です。zipインポートに対応している環境では、対象に合うzipファイルをそのまま指定してください。ローカルのSkillディレクトリへ配置する環境では、zipを展開して作成された `dads/` フォルダを、その環境のSkill配置先へ置いてください。
+
+Codexで使う場合:
+
+```text
+dist/dads-codex.zip
+```
+
+Claude Codeで使う場合:
+
+```text
+dist/dads-claude-code.zip
+```
+
+配布zipにはGitHub閲覧用の `README.md` は含めていません。Skillとして読み込ませる実体は、各zip内の `dads/SKILL.md` と `dads/references/` です。
+
 ## 構成
 
 ```text
@@ -44,6 +67,9 @@ $dads を使って、自治体向け申請フォームのUIをDADSに沿って�
 │   ├── foundations.md
 │   ├── implementation-resources.md
 │   └── site-map.md
+├── dist/
+│   ├── dads-claude-code.zip
+│   └── dads-codex.zip
 ├── LICENSE
 └── README.md
 ```
