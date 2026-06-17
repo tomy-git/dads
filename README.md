@@ -1,0 +1,2 @@
+# dads
+デジタル庁デザインシステムを使うことができるCodex/Claude対応Skills
