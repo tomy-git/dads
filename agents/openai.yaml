@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MPL-2.0
+
+interface:
+  display_name: "DADS"
+  short_description: "デジタル庁デザインシステム準拠のWeb開発実装を支援"
+  default_prompt: "Use $dads to build an accessible public-sector web UI with the Digital Agency Design System."
